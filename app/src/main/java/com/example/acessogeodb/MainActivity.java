@@ -28,14 +28,17 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected DadosCidade doInBackground(Void... params) {
             DadosCidade dadosGeoDB = null;
+            // chama endpoint para busca do "wikiDataId" da cidade
 
+
+            // chama endpoint com dados da cidade
             OkHttpClient client = new OkHttpClient();
             String url = "https://wft-geo-db.p.rapidapi.com/v1/geo/cities/Q817216";
             Request request = new Request.Builder()
                     .url(url)
                     .get()
                     .addHeader("X-RapidAPI-Host", "wft-geo-db.p.rapidapi.com")
-                    .addHeader("X-RapidAPI-Key", "2ce77f204fmsh60fe1134c1017c1p1d3c08jsn1be33b23f2ea")
+                    .addHeader("X-RapidAPI-Key", "8cfb61b3f0msh679aa8dea496f98p10325fjsne48e9885f0a9")
                     .build();
 
             Response response = null;
@@ -89,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTextViewDados = findViewById(R.id.view_texto_dos_dados);
+        //mTextViewDados = findViewById(R.id.view_texto_dos_dados);
         mBotaoBusca = (Button) findViewById(R.id.botaoBusca);
         mBotaoBusca.setOnClickListener(new View.OnClickListener() {
             @Override

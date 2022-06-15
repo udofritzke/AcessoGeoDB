@@ -7,12 +7,28 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/botaoBusca"
+    <EditText
+        android:id="@+id/textoNomeCidade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Busca"
         app:layout_constraintEnd_toEndOf="parent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/botaoBuscaId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Busca Id"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <Button
+        android:id="@+id/botaoBuscaDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Busca Dados"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="109dp" />
 

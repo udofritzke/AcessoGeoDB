@@ -18,6 +18,9 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
+// Link para respositório do GitHub
+// https://github.com/udofritzke/AcessoGeoDB
+
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private Button mBotaoBusca;

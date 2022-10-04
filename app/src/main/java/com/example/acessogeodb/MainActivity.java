@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     .url(url)
                     .get()
                     .addHeader("X-RapidAPI-Host", "wft-geo-db.p.rapidapi.com")
-                    .addHeader("X-RapidAPI-Key", "8cfb61b3f0msh679aa8dea496f98p10325fjsne48e9885f0a9")
+                    .addHeader("X-RapidAPI-Key", "colocar seu token aqui")
                     .build();
 
             Response response = null;

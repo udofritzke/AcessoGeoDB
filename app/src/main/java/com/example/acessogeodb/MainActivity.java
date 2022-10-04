@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
                     .url(url)
                     .get()
                     .addHeader("X-RapidAPI-Host", "wft-geo-db.p.rapidapi.com")
-                    .addHeader("X-RapidAPI-Key", "2ce77f204fmsh60fe1134c1017c1p1d3c08jsn1be33b23f2ea")
+                    .addHeader("X-RapidAPI-Key", "8cfb61b3f0msh679aa8dea496f98p10325fjsne48e9885f0a9")
+//                            "2ce77f204fmsh60fe1134c1017c1p1d3c08jsn1be33b23f2ea")
                     .build();
 
             Response response = null;
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mTextViewDados = findViewById(R.id.view_texto_dos_dados);
-        mBotaoBusca = (Button) findViewById(R.id.botaoBusca);
+        mBotaoBusca = (Button) findViewById(R.id.botaoBuscaDados);
         mBotaoBusca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
                     .get()
                     .addHeader("X-RapidAPI-Host", "wft-geo-db.p.rapidapi.com")
                     .addHeader("X-RapidAPI-Key", "xxxxx")
-
                     .build();
 
             Response response = null;
